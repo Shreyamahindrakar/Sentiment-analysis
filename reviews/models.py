@@ -8,7 +8,7 @@ class Review(models.Model):
     brand = models.CharField(max_length=255)
     review = models.TextField()
     aspect = models.CharField(max_length=255)
-    aspect_sentiment = models.FloatField()
+    aspect_sentiment = models.CharField(max_length=255)
     overall_sentiment = models.IntegerField()
     scrape_date = models.CharField(max_length=255)
     stars_count = models.FloatField()
